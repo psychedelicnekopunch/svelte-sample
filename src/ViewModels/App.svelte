@@ -3,7 +3,7 @@
 
 	export let name;
 
-	let repos;
+	let repos = [];
 
 	Repos.list((lists) => {
 		repos = lists
@@ -20,4 +20,9 @@
 
 <h1>Hello { name }!</h1>
 
-{ repos }
+<ul>
+{ #each repos as repo }
+	<li><a href="{ repo.url }" target="_blank">{ repo.name }</a></li>
+{ /each }
+</ul>
+
