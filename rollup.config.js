@@ -4,6 +4,11 @@ import commonjs from 'rollup-plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 
+// import babel from 'rollup-plugin-babel';
+import globals from 'rollup-plugin-node-globals';
+import builtins from 'rollup-plugin-node-builtins';
+import json from 'rollup-plugin-json';
+
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
@@ -12,7 +17,11 @@ export default {
 		sourcemap: true,
 		format: 'iife',
 		name: 'app',
-		file: 'public/bundle.js'
+		file: 'public/bundle.js',
+		// globals: {
+		// 	'request': 'Request',
+		// 	'axios': 'Axios',
+		// },
 	},
 	plugins: [
 		svelte({
@@ -30,7 +39,13 @@ export default {
 		// some cases you'll need additional configuration —
 		// consult the documentation for details:
 		// https://github.com/rollup/rollup-plugin-commonjs
-		resolve(),
+		resolve({
+			// some package.json files have a "browser" field which specifies
+			// alternative files to load for people bundling for the browser. If
+			// that's you, either use this option or add "browser" to the
+			// "mainfields" option, otherwise pkg.browser will be ignored
+			browser: true,  // Default: false
+		}),
 		commonjs(),
 
 		// Watch the `public` directory and refresh the
@@ -39,6 +54,19 @@ export default {
 
 		// If we're building for production (npm run build
 		// instead of npm run dev), minify
-		production && terser()
-	]
+		production && terser(),
+
+		// babel({
+		// 	exclude: 'node_modules/**',
+		// }),
+
+		builtins(),
+		globals(),
+		json(),
+	],
+	external: [
+		// 'request',
+		// 'axios',
+	],
+
 };
