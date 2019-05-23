@@ -1,0 +1,9 @@
+#!/bin/sh
+
+cd `dirname $0`
+d=`pwd`
+
+cd $d/../
+
+npm run build
+npm run gulp
