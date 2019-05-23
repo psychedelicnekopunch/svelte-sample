@@ -2,3 +2,4 @@
 node_modules
 public/**/bundle.*
 public/css/style.css
+package-lock.json
