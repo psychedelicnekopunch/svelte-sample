@@ -2,6 +2,11 @@
   "name": "svelte-sample",
   "version": "1.0.0",
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
     "node-sass": "^4.12.0",
     "npm-run-all": "^4.1.5",
     "rollup": "^1.10.1",
@@ -22,7 +27,8 @@
     "autobuild": "rollup -c -w",
     "dev": "run-p start:dev autobuild",
     "start": "sirv public",
-    "start:dev": "sirv public --dev"
+    "start:dev": "sirv public --dev",
+    "gulp": "gulp"
   },
   "dependencies": {
     "axios": "^0.18.0",
