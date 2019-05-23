@@ -1,11 +1,11 @@
 
-import App2 from './../ViewModels/App2.svelte';
+import Test from './../ViewModels/Pages/Test.svelte';
 
 
 const TestController = {
 	Index: (context) => {
 		console.log(context)
-		const app = new App2({
+		const app = new Test({
 			target: document.body,
 			props: {
 				context: context
@@ -14,7 +14,7 @@ const TestController = {
 	},
 	List: (context) => {
 		console.log(context)
-		const app = new App2({
+		const app = new Test({
 			target: document.body,
 			props: {
 				context: context

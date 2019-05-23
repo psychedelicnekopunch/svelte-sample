@@ -1,7 +1,5 @@
 <script>
-	import Repos from './../Models/Repos.js';
-
-	export let name;
+	import Repos from './../../Models/Repos.js';
 
 	let repos = [];
 
@@ -13,16 +11,16 @@
 </script>
 
 <style>
-	h1 {
-		color: #f66;
+	li {
+		list-style-type: none;
+		border-bottom: 1px #eee solid;
+		padding: 10px;
+		margin-bottom: 10px;
 	}
 </style>
-
-<h1>Hello { name }!</h1>
 
 <ul>
 { #each repos as repo }
 	<li><a href="{ repo.url }" target="_blank">{ repo.name }</a></li>
 { /each }
 </ul>
-
