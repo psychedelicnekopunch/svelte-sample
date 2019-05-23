@@ -1,0 +1,14 @@
+$color-bg: #f5f5f5;
+$color-link: #02b;
+$color-link-hover: #24d;
+
+body {
+	background: $color-bg;
+}
+
+a {
+	color: $color-link;
+	&:hover {
+		color: $color-link-hover;
+	}
+}
