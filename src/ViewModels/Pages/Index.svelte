@@ -6,9 +6,12 @@
 
 </script>
 
-<style>
+<style lang="scss">
+
+	$color: #f66;
+
 	h1 {
-		color: #f66;
+		color: $color;
 	}
 </style>
 

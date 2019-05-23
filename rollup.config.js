@@ -9,6 +9,9 @@ import globals from 'rollup-plugin-node-globals';
 import builtins from 'rollup-plugin-node-builtins';
 import json from 'rollup-plugin-json';
 
+// Sass
+import preprocess from 'svelte-preprocess'
+
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
@@ -31,7 +34,11 @@ export default {
 			// a separate file — better for performance
 			css: css => {
 				css.write('public/bundle.css');
-			}
+			},
+			// Sass
+			preprocess: preprocess({
+				sass: true,
+			}),
 		}),
 
 		// If you have external dependencies installed from

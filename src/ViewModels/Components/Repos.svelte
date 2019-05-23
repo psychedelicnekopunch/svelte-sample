@@ -10,12 +10,18 @@
 
 </script>
 
-<style>
-	li {
-		list-style-type: none;
-		border-bottom: 1px #eee solid;
-		padding: 10px;
-		margin-bottom: 10px;
+<style lang="scss">
+
+	$color: #eee;
+
+	ul {
+		li {
+			background: $color;
+			list-style-type: none;
+			/*border-bottom: 1px $color solid;*/
+			padding: 10px;
+			margin-bottom: 10px;
+		}
 	}
 </style>
 

@@ -2,7 +2,7 @@
 	export let context;
 </script>
 
-<style>
+<style lang="scss">
 	h1 {
 		color: #46c;
 	}
