@@ -37,7 +37,7 @@ export default {
 			},
 			// Sass
 			preprocess: preprocess({
-				sass: true,
+				scss: true,
 			}),
 		}),
 
