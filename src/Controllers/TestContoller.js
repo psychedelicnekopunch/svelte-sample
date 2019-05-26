@@ -1,5 +1,5 @@
 
-import Test from './../ViewModels/Pages/Test.svelte';
+import Test from './../Views/Test.svelte';
 
 
 const TestController = {

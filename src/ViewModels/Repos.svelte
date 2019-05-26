@@ -1,5 +1,5 @@
 <script>
-	import Repos from './../../Models/Repos.js';
+	import Repos from './../Models/Repos.js';
 
 	let repos = [];
 
