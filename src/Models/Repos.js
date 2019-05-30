@@ -1,5 +1,5 @@
 
-import axios from 'axios';
+import Api from './Api.js';
 
 
 const Repos = {
@@ -7,19 +7,9 @@ const Repos = {
 		// let lists = [{ id: 1 }, { id: 2 }]
 		// callback(lists)
 		// console.log(axios)
-		axios.get('https://api.github.com/users/psychedelicnekopunch/repos')
-			.then((response) => {
-				// handle success
-				console.log(response);
-				callback(response.data)
-			})
-			.catch(function (error) {
-				// handle error
-				console.log(error);
-			})
-			.finally(function () {
-				// always executed
-			})
+		Api.get('/users/psychedelicnekopunch/repos', null, (error, message, data) => {
+			callback(data)
+		})
 	}
 }
 

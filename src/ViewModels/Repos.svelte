@@ -13,14 +13,21 @@
 <style lang="scss">
 
 	$color: #eee;
+	$color-hover: #f2f2f2;
 
 	ul {
 		li {
-			background: $color;
-			list-style-type: none;
-			/*border-bottom: 1px $color solid;*/
-			padding: 10px;
-			margin-bottom: 10px;
+			a {
+				display: block;
+				background: $color;
+				list-style-type: none;
+				/*border-bottom: 1px $color solid;*/
+				padding: 10px;
+				margin-bottom: 10px;
+				&:hover {
+					background: $color-hover;
+				}
+			}
 		}
 	}
 </style>
