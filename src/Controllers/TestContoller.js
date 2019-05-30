@@ -5,8 +5,10 @@ import Test from './../Views/Test.svelte';
 const TestController = {
 	Index: (context) => {
 		console.log(context)
+		document.getElementById('app').innerText = ''
 		const app = new Test({
-			target: document.body,
+			// target: document.body,
+			target: document.getElementById('app'),
 			props: {
 				context: context
 			}
@@ -14,8 +16,10 @@ const TestController = {
 	},
 	List: (context) => {
 		console.log(context)
+		document.getElementById('app').innerText = ''
 		const app = new Test({
-			target: document.body,
+			// target: document.body,
+			target: document.getElementById('app'),
 			props: {
 				context: context
 			}

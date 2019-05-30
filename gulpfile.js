@@ -7,6 +7,7 @@ const $ = gulpLoadPlugins();
 function build(callback) {
 	gulp.src('sass/style.scss')
 		.pipe($.plumber())
+		.pipe($.sourcemaps.init())
 		.pipe($.sass({
 			// includePaths : [require("bourbon").includePaths],
 			// [outputStyle] Type: String Default: nested Values: nested, expanded, compact, compressed
@@ -15,6 +16,7 @@ function build(callback) {
 		.pipe($.autoprefixer({
 			browsers: ['last 1 versions']
 		}))
+		.pipe($.sourcemaps.write())
 		.pipe(gulp.dest('./public/css'))
 	callback()
 }
