@@ -1,10 +1,12 @@
 
 import page from 'page'
 
+import DatePickerContoller from './Controllers/DatePickerContoller.js'
 import IndexContoller from './Controllers/IndexContoller.js'
 import TestContoller from './Controllers/TestContoller.js'
 
 page('/', IndexContoller.Index)
+page('/date_picker', DatePickerContoller.Index)
 page('/test', TestContoller.List)
 page('/test/:id', TestContoller.Index)
 page()
