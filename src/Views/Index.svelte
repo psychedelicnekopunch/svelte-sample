@@ -18,6 +18,11 @@
 
 <h1>Hello { name }!</h1>
 
-<a href="/test/123">test &gt;</a>
+<nav>
+	<ul>
+		<li><a href="/date_picker">Date Picker &gt;</a></li>
+		<li><a href="/test/123">test &gt;</a></li>
+	</ul>
+</nav>
 
 <Repos/>
