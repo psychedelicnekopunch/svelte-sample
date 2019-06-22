@@ -2,6 +2,7 @@
 
 	import Repos from './../ViewModels/Repos.svelte';
 
+
 	export let name;
 
 </script>
@@ -13,6 +14,7 @@
 	h1 {
 		color: $color;
 	}
+
 </style>
 
 
@@ -22,6 +24,7 @@
 	<ul>
 		<li><a href="/date_picker">Date Picker &gt;</a></li>
 		<li><a href="/test/123">test &gt;</a></li>
+		<li><a href="/toaster">Toaster &gt;</a></li>
 	</ul>
 </nav>
 
