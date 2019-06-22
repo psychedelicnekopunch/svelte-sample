@@ -1,11 +1,7 @@
 <script>
-	/**
-	 * npm install --save moment lodash.foreach
-	 *
-	 */
 
-	import moment from 'moment'
 	import _foreach from 'lodash.foreach'
+	import moment from 'moment'
 
 
 	class Calendar {
@@ -235,10 +231,10 @@
 		setTime()
 	}
 
-
 </script>
 
 <style lang="scss">
+
 	.dp {
 		background: #f2f2f2;
 		padding: 12px;
@@ -283,20 +279,21 @@
 			}
 		}
 	}
+
 </style>
 
 
 <div class="date-picker dp">
 	<header>
 		<div class="date-picker-left">
-			<button on:click={ prev }><i class="fas fa-chevron-left"></i></button>
+			<button on:click|preventDefault={ prev }><i class="fas fa-chevron-left"></i></button>
 		</div>
 		<small class="date-picker-text">{ calendar.detail.year }年{ calendar.detail.month }月</small>
 		<div class="date-picker-right">
-			<button on:click={ next }><i class="fas fa-chevron-right"></i></button>
+			<button on:click|preventDefault={ next }><i class="fas fa-chevron-right"></i></button>
 		</div>
 		<div class="date-picker-today">
-			<button on:click={ today }><i class="fas fa-chevron-event"></i>今日</button>
+			<button on:click|preventDefault={ today }><i class="fas fa-chevron-event"></i>今日</button>
 		</div>
 	</header>
 	{ #if !isOnlyDate }
