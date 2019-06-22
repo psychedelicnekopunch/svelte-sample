@@ -1,7 +1,10 @@
 <script>
+
 	import Repos from './../Models/Repos.js';
 
+
 	let repos = [];
+
 
 	Repos.list((lists) => {
 		repos = lists
@@ -30,10 +33,12 @@
 			}
 		}
 	}
+
 </style>
 
+
 <ul>
-{ #each repos as repo }
-	<li><a href="{ repo.url }" target="_blank">{ repo.name }</a></li>
-{ /each }
+	{ #each repos as repo }
+		<li><a href="{ repo.url }" target="_blank">{ repo.name }</a></li>
+	{ /each }
 </ul>
