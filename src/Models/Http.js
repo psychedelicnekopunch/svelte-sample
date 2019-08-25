@@ -6,7 +6,7 @@ import _foreach from 'lodash.foreach'
 /**
  * callback(error boolean, message string, data object|null)
  */
-const Api = {
+const Http = {
 	get: (endpoint, params, callback) => {
 
 		let sendParams = (params == null) ? {} : params
@@ -67,4 +67,4 @@ const Api = {
 }
 
 
-export default Api;
+export default Http;

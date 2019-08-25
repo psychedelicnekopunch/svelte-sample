@@ -1,5 +1,5 @@
 
-import Api from './Api.js';
+import Http from './Http.js';
 
 
 const Repos = {
@@ -7,7 +7,7 @@ const Repos = {
 		// let lists = [{ id: 1 }, { id: 2 }]
 		// callback(lists)
 		// console.log(axios)
-		Api.get('/users/psychedelicnekopunch/repos', null, (error, message, data) => {
+		Http.get('/users/psychedelicnekopunch/repos', null, (error, message, data) => {
 			callback(data)
 		})
 	}
