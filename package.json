@@ -35,6 +35,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "lodash.foreach": "^4.5.0",
+    "marked": "^0.7.0",
     "moment": "^2.24.0",
     "page": "^1.11.4"
   }
