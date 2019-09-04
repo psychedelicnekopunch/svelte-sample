@@ -107,6 +107,7 @@
 
 	export let value = 0
 	export let isOnlyDate = false
+	export let didChange = (() => {})
 
 	let hour = '0'
 	let min  = '0'
@@ -116,6 +117,7 @@
 		if (!value) {
 			value = cal.today
 			cal = new Calendar(value)
+			didChange()
 		}
 		return cal.get()
 	})()
@@ -152,6 +154,7 @@
 		value = (_tempModel) ? _tempModel : value
 		_tempModel = value
 		value = Number(value) + Number(hour) + Number(min)
+		didChange()
 	}
 
 
