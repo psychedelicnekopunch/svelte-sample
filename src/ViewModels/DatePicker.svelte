@@ -107,6 +107,7 @@
 
 	export let value = 0
 	export let isOnlyDate = false
+	export let didInit = (() => {})
 	export let didChange = (() => {})
 
 	let hour = '0'
@@ -117,7 +118,7 @@
 		if (!value) {
 			value = cal.today
 			cal = new Calendar(value)
-			didChange()
+			didInit()
 		}
 		return cal.get()
 	})()
