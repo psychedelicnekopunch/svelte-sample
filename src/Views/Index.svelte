@@ -26,6 +26,7 @@
 		<li><a href="/test/123">test &gt;</a></li>
 		<li><a href="/toaster">Toaster &gt;</a></li>
 		<li><a href="/markdown">Markdown &gt;</a></li>
+		<li><a href="/component_event">Component Event &gt;</a></li>
 	</ul>
 </nav>
 
