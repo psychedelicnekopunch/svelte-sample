@@ -2,7 +2,7 @@
 import Toaster from './../Views/Toaster.svelte';
 
 
-const ToasterContoller = {
+const ToasterController = {
 	Index: (context) => {
 		document.getElementById('app').innerText = ''
 		const app = new Toaster({
@@ -11,4 +11,4 @@ const ToasterContoller = {
 	}
 }
 
-export default ToasterContoller;
+export default ToasterController;

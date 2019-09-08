@@ -2,7 +2,7 @@
 import DatePicker from './../Views/DatePicker.svelte';
 
 
-const DatePickerContoller = {
+const DatePickerController = {
 	Index: (context) => {
 		document.getElementById('app').innerText = ''
 		const app = new DatePicker({
@@ -11,4 +11,4 @@ const DatePickerContoller = {
 	}
 }
 
-export default DatePickerContoller;
+export default DatePickerController;

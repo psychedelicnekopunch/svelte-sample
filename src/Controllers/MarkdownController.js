@@ -2,7 +2,7 @@
 import Markdown from './../Views/Markdown.svelte';
 
 
-const MarkdownContoller = {
+const MarkdownController = {
 	Index: (context) => {
 		document.getElementById('app').innerText = ''
 		const app = new Markdown({
@@ -11,4 +11,4 @@ const MarkdownContoller = {
 	}
 }
 
-export default MarkdownContoller;
+export default MarkdownController;

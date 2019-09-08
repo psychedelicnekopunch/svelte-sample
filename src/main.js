@@ -1,18 +1,20 @@
 
 import page from 'page'
 
-import DatePickerContoller from './Controllers/DatePickerContoller.js'
-import IndexContoller from './Controllers/IndexContoller.js'
-import TestContoller from './Controllers/TestContoller.js'
-import ToasterContoller from './Controllers/ToasterContoller.js'
-import MarkdownContoller from './Controllers/MarkdownContoller.js'
+import DatePickerController from './Controllers/DatePickerController.js'
+import IndexController from './Controllers/IndexController.js'
+import TestController from './Controllers/TestController.js'
+import ToasterController from './Controllers/ToasterController.js'
+import MarkdownController from './Controllers/MarkdownController.js'
+import ComponentEventController from './Controllers/ComponentEventController.js'
 
-page('/', IndexContoller.Index)
-page('/date_picker', DatePickerContoller.Index)
-page('/test', TestContoller.List)
-page('/test/:id', TestContoller.Index)
-page('/toaster', ToasterContoller.Index)
-page('/markdown', MarkdownContoller.Index)
+page('/', IndexController.Index)
+page('/date_picker', DatePickerController.Index)
+page('/test', TestController.List)
+page('/test/:id', TestController.Index)
+page('/toaster', ToasterController.Index)
+page('/markdown', MarkdownController.Index)
+page('/component_event', ComponentEventController.Index)
 page()
 
 /*
