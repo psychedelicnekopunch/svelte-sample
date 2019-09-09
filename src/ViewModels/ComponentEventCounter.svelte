@@ -1,5 +1,6 @@
 <script>
 
+	import { onMount } from 'svelte';
 	import { createEventDispatcher } from 'svelte';
 
 	const dispatch = createEventDispatcher();
@@ -19,7 +20,12 @@
 		counter += 1
 	}
 
-	window.addEventListener('load', () => {
+	// window.setTimeout(() => {
+	// 	console.log('Child: dispatch("didInit")')
+	// 	dispatch('didInit', _methods)
+	// }, 10)
+
+	onMount(() => {
 		console.log('Child: dispatch("didInit")')
 		dispatch('didInit', _methods)
 	})
