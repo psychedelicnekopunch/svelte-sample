@@ -1,15 +1,17 @@
 <script>
 
 	import ComponentEventFire from './../ViewModels/ComponentEventFire.svelte';
-	import ComponentEventReceiver from './../ViewModels/ComponentEventReceiver.svelte';
+	import ComponentEventCounter from './../ViewModels/ComponentEventCounter.svelte';
 
-	let componentEventReceiver = null
+
+	let componentEventCounter = null
+
 
 	function fire(e) {
 		console.log('parent: fire')
 		console.log(e)
-		if (componentEventReceiver) {
-			componentEventReceiver.detail()
+		if (componentEventCounter) {
+			componentEventCounter.detail().increase()
 		}
 	}
 
@@ -17,19 +19,33 @@
 	function receiver(e) {
 		console.log('parent: receiver')
 		console.log(e)
-		componentEventReceiver = e
+		componentEventCounter = e
 	}
 
 
 </script>
 
 <style lang="scss">
-
+	.card {
+		background: #fff;
+		box-shadow: 0 0 3px 1px rgba(0,0,0,.3);
+		border-radius: 2px;
+		padding: 12px;
+		margin: 0 0 12px;
+		> .card {
+			background: #f5f5f5;
+		}
+	}
 </style>
 
-
-ComponentEventFire.svelte<br>
-<ComponentEventFire didClick1={ fire } on:didClick2={ fire }/>
-<hr>
-ComponentEventReceiver.svelte<br>
-<ComponentEventReceiver on:didInit={ receiver }/>
+<div class="card">
+	<h1>src/Views/ComponentEvent.svelte</h1>
+	<div class="card">
+		<h2>src/ViewModels/ComponentEventFire.svelte</h2>
+		<ComponentEventFire didClick1={ fire } on:didClick2={ fire }/>
+	</div>
+	<div class="card">
+		<h2>src/ViewModels/ComponentEventCounter.svelte</h2>
+		<ComponentEventCounter on:didInit={ receiver }/>
+	</div>
+</div>

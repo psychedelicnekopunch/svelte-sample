@@ -4,7 +4,7 @@
 
 	export let didClick1 = () => {}
 
-	const dispatch = createEventDispatcher();
+	const _dispatch = createEventDispatcher();
 
 
 	function click1() {
@@ -14,13 +14,19 @@
 
 	function click2() {
 		console.log('Child Fire: click2() - dispatch - ==========')
-		dispatch('didClick2')
+		_dispatch('didClick2')
 	}
 
 </script>
 
 <style lang="scss">
-
+	button {
+		cursor: pointer;
+		background: #444;
+		color: #fff;
+		padding: 12px 24px;
+		margin: 10px 10px;
+	}
 </style>
 
 
