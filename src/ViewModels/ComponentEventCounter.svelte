@@ -1,9 +1,9 @@
 <script>
 
-	import { onMount } from 'svelte';
-	import { createEventDispatcher } from 'svelte';
+	import { onMount } from 'svelte'
+	import { createEventDispatcher } from 'svelte'
 
-	const dispatch = createEventDispatcher();
+	const dispatch = createEventDispatcher()
 
 	let counter = 0
 

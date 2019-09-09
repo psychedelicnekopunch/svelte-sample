@@ -1,7 +1,7 @@
 <script>
 
-	import ComponentEventFire from './../ViewModels/ComponentEventFire.svelte';
-	import ComponentEventCounter from './../ViewModels/ComponentEventCounter.svelte';
+	import ComponentEventFire from './../ViewModels/ComponentEventFire.svelte'
+	import ComponentEventCounter from './../ViewModels/ComponentEventCounter.svelte'
 
 
 	let componentEventCounter = null

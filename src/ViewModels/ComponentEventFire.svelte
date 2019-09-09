@@ -1,10 +1,10 @@
 <script>
 
-	import { createEventDispatcher } from 'svelte';
+	import { createEventDispatcher } from 'svelte'
 
 	export let didClick1 = () => {}
 
-	const _dispatch = createEventDispatcher();
+	const _dispatch = createEventDispatcher()
 
 
 	function click1() {
