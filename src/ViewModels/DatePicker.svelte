@@ -141,6 +141,7 @@
 		for (let j = 0; j < cnt; j++) {
 			res.push({ value: (j * step * 60), text: (j * step) })
 		}
+		res.push({ value: 59 * 60, text: 59 })
 		return res
 	})()
 
@@ -244,16 +245,37 @@
 		padding: 12px;
 		> header {
 			display: flex;
+			padding-bottom: 20px;
+			.date-picker-left,
+			.date-picker-right {
+				button {
+					padding: 8px 12px;
+				}
+			}
+			.date-picker-text {
+				padding: 8px 12px;
+			}
+			.date-picker-today {
+				flex: 1;
+				button {
+					background: #fff;
+					border: 1px #ccc solid;
+					padding: 8px 12px;
+					border-radius: 2px;
+				}
+			}
 		}
 		.dp-date {
 			display: flex;
 		}
 		> table {
 			width: 100%;
+			border-collapse: collapse;
 			th {
 				background: #444;
 				color: #fff;
 				padding: 5px;
+				border: 1px #bbb solid;
 				&.dp-wday-0 {
 					background: #f44;
 				}
@@ -262,8 +284,10 @@
 				}
 			}
 			td {
+				background: #ddd;
 				text-align: center;
 				padding: 5px;
+				border: 1px #bbb solid;
 				cursor: pointer;
 				&.dp-current-month {
 					background: #fff;
@@ -274,11 +298,11 @@
 						background: #88f;
 					}
 					&.dp-selected {
-						background: #aaa;
+						background: #ff6;
 					}
 				}
 				&.dp-selected {
-					background: #aaa;
+					background: #ff6;
 				}
 			}
 		}
