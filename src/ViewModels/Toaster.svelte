@@ -8,7 +8,7 @@
 	export let timeout = 3000
 	export let type = 'default'
 
-	let promise
+	let _promise
 
 
 	function change(node, parameters) {
@@ -17,13 +17,13 @@
 				timeout = (-1 < timeout && timeout < 50) ? 50 : timeout
 				if (-1 < timeout) {
 					if (message) {
-						if (promise) {
-							promise.clearTimeout()
-							promise = null
+						if (_promise) {
+							_promise.clearTimeout()
+							_promise = null
 						}
-						promise = window.setTimeout(() => {
+						_promise = window.setTimeout(() => {
 							message = ''
-							promise = null
+							_promise = null
 						}, timeout)
 					}
 				}

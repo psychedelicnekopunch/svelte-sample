@@ -300,9 +300,18 @@
 					&.dp-selected {
 						background: #ff6;
 					}
+					&:hover {
+						background: #fcfc00;
+					}
 				}
 				&.dp-selected {
 					background: #ff6;
+					&:hover {
+						background: #fcfc00;
+					}
+				}
+				&:hover {
+					background: #fcfc00;
 				}
 			}
 		}
