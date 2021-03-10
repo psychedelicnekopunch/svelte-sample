@@ -336,7 +336,7 @@
 	{ #if !isOnlyDate }
 		<div class="date-picker-date dp-date">
 			<div class="date-picker-hour">
-				<select bind:value={ hour } on:change={ setTime }>
+				<select bind:value={ hour } on:blur={ setTime }>
 					{ #each hours as list }
 						<option value="{ list.value }">{ list.text }</option>
 					{ /each }
@@ -344,7 +344,7 @@
 			</div>
 			<span>：</span>
 			<div class="date-picker-min">
-				<select bind:value={ min } on:change={ setTime }>
+				<select bind:value={ min } on:blur={ setTime }>
 					{ #each mins as list }
 						<option value="{ list.value }">{ list.text }</option>
 					{ /each }
