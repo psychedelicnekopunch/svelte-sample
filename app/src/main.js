@@ -1,5 +1,6 @@
 
 import page from 'page'
+import sass from './../sass/style.scss'
 
 import DatePickerController from './Controllers/DatePickerController.js'
 import IndexController from './Controllers/IndexController.js'
