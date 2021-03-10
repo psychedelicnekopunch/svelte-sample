@@ -1,5 +1,5 @@
 
-import Test from './../Views/Test.svelte';
+import Test from '/src/interfaces/presenters/Test.svelte';
 
 
 const TestController = {

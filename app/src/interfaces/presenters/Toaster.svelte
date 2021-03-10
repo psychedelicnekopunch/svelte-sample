@@ -1,6 +1,6 @@
 <script>
 
-	import Toaster from './../ViewModels/Toaster.svelte';
+	import Toaster from '/src/interfaces/presenters/components/Toaster.svelte';
 
 
 	let message1 = '';

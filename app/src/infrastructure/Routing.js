@@ -1,13 +1,12 @@
 
 import page from 'page'
-import sass from './../sass/style.scss'
 
-import DatePickerController from './Controllers/DatePickerController.js'
-import IndexController from './Controllers/IndexController.js'
-import TestController from './Controllers/TestController.js'
-import ToasterController from './Controllers/ToasterController.js'
-import MarkdownController from './Controllers/MarkdownController.js'
-import ComponentEventController from './Controllers/ComponentEventController.js'
+import DatePickerController from '/src/interfaces/controllers/DatePickerController.js'
+import IndexController from '/src/interfaces/controllers/IndexController.js'
+import TestController from '/src/interfaces/controllers/TestController.js'
+import ToasterController from '/src/interfaces/controllers/ToasterController.js'
+import MarkdownController from '/src/interfaces/controllers/MarkdownController.js'
+import ComponentEventController from '/src/interfaces/controllers/ComponentEventController.js'
 
 page('/', IndexController.Index)
 page('/date_picker', DatePickerController.Index)

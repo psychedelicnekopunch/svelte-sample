@@ -7,7 +7,7 @@ const mode = process.env.NODE_ENV || 'development';
 const prod = mode === 'production';
 
 module.exports = {
-	entry: './src/main.js',
+	entry: './main.js',
 	resolve: {
 		alias: {
 			svelte: path.dirname(require.resolve('svelte/package.json'))

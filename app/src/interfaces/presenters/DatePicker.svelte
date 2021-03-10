@@ -1,6 +1,6 @@
 <script>
 
-	import DatePicker from './../ViewModels/DatePicker.svelte';
+	import DatePicker from '/src/interfaces/presenters/components/DatePicker.svelte';
 
 
 	let res = 0;

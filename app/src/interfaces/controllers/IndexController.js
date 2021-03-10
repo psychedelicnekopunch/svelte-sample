@@ -1,5 +1,5 @@
 
-import Index from './../Views/Index.svelte';
+import Index from '/src/interfaces/presenters/Index.svelte';
 
 
 const IndexController = {

@@ -1,6 +1,6 @@
 <script>
 
-	import Repos from './../ViewModels/Repos.svelte';
+	import Repos from '/src/interfaces/presenters/components/Repos.svelte';
 
 
 	export let name;

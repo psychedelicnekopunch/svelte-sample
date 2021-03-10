@@ -1,5 +1,5 @@
 
-import DatePicker from './../Views/DatePicker.svelte';
+import DatePicker from '/src/interfaces/presenters/DatePicker.svelte';
 
 
 const DatePickerController = {

@@ -1,5 +1,5 @@
 
-import ComponentEvent from './../Views/ComponentEvent.svelte';
+import ComponentEvent from '/src/interfaces/presenters/ComponentEvent.svelte';
 
 
 const ComponentEventController = {

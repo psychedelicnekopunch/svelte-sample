@@ -1,5 +1,5 @@
 
-import Toaster from './../Views/Toaster.svelte';
+import Toaster from '/src/interfaces/presenters/Toaster.svelte';
 
 
 const ToasterController = {

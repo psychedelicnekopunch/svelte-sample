@@ -1,5 +1,5 @@
 
-import Markdown from './../Views/Markdown.svelte';
+import Markdown from '/src/interfaces/presenters/Markdown.svelte';
 
 
 const MarkdownController = {

@@ -1,6 +1,6 @@
 <script>
 
-	import Repos from './../Models/Repos.js';
+	import Repos from '/src/interfaces/database/Repos.js';
 
 
 	let repos = [];
