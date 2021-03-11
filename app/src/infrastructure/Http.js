@@ -13,7 +13,7 @@ const Http = {
 
 		axios({
 			method: 'get',
-			baseURL: 'https://api.github.com',
+			// baseURL: 'https://api.github.com',
 			url: endpoint,
 			params: sendParams,
 		})
@@ -44,7 +44,7 @@ const Http = {
 
 		axios({
 			method: 'post',
-			baseURL: 'https://api.github.com',
+			// baseURL: 'https://api.github.com',
 			url: endpoint,
 			data: formData,
 		})

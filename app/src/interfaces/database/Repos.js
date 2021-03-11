@@ -7,7 +7,7 @@ const Repos = {
 		// let lists = [{ id: 1 }, { id: 2 }]
 		// callback(lists)
 		// console.log(axios)
-		Http.get('/users/psychedelicnekopunch/repos', null, (error, message, data) => {
+		Http.get('https://api.github.com/users/psychedelicnekopunch/repos', null, (error, message, data) => {
 			callback(data)
 		})
 	}

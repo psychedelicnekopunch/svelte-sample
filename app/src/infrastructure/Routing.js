@@ -7,6 +7,8 @@ import TestController from '/src/interfaces/controllers/TestController.js'
 import ToasterController from '/src/interfaces/controllers/ToasterController.js'
 import MarkdownController from '/src/interfaces/controllers/MarkdownController.js'
 import ComponentEventController from '/src/interfaces/controllers/ComponentEventController.js'
+import ReposController from '/src/interfaces/controllers/ReposController.js'
+import PostcodeController from '/src/interfaces/controllers/PostcodeController.js'
 
 page('/', IndexController.Index)
 page('/date_picker', DatePickerController.Index)
@@ -15,6 +17,8 @@ page('/test/:id', TestController.Index)
 page('/toaster', ToasterController.Index)
 page('/markdown', MarkdownController.Index)
 page('/component_event', ComponentEventController.Index)
+page('/repos', ReposController.Index)
+page('/postcode', PostcodeController.Index)
 page()
 
 /*

@@ -1,8 +1,5 @@
 <script>
 
-	import Repos from '/src/interfaces/presenters/components/Repos.svelte';
-
-
 	export let name;
 
 </script>
@@ -27,7 +24,7 @@
 		<li><a href="/toaster">Toaster &gt;</a></li>
 		<li><a href="/markdown">Markdown &gt;</a></li>
 		<li><a href="/component_event">Component Event &gt;</a></li>
+		<li><a href="/repos">github repos &gt;</a></li>
+		<li><a href="/postcode">Postcode API &gt;</a></li>
 	</ul>
 </nav>
-
-<Repos/>
