@@ -28,7 +28,7 @@ call: { i } times.
 </form>
 
 
-<form method="GET">
+<form>
 	<input type="text" name="" value="" placeholder="focus and press ENTER">
 	<button type="submit" on:click|preventDefault={ call }>
 		type submit
@@ -48,7 +48,7 @@ call: { i } times.
 </div>
 
 
-<div method="GET">
+<div>
 	<input type="text" name="" value="" placeholder="focus and press ENTER">
 	<button type="submit" on:click|preventDefault={ call }>
 		type submit
