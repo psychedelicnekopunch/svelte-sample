@@ -27,5 +27,6 @@
 		<li><a href="/repos">github repos &gt;</a></li>
 		<li><a href="/postcode">Postcode API &gt;</a></li>
 		<li><a href="/each">About a "each" &gt;</a></li>
+		<li><a href="/form">form tag</a></li>
 	</ul>
 </nav>

@@ -10,6 +10,7 @@ import ComponentEventController from '/src/interfaces/controllers/ComponentEvent
 import ReposController from '/src/interfaces/controllers/ReposController.js'
 import PostcodeController from '/src/interfaces/controllers/PostcodeController.js'
 import EachController from '/src/interfaces/controllers/EachController.js'
+import FormController from '/src/interfaces/controllers/FormController.js'
 
 page('/', IndexController.Index)
 page('/date_picker', DatePickerController.Index)
@@ -21,6 +22,7 @@ page('/component_event', ComponentEventController.Index)
 page('/repos', ReposController.Index)
 page('/postcode', PostcodeController.Index)
 page('/each', EachController.Index)
+page('/form', FormController.Index)
 page()
 
 /*
