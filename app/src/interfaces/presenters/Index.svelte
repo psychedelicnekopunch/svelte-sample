@@ -26,5 +26,6 @@
 		<li><a href="/component_event">Component Event &gt;</a></li>
 		<li><a href="/repos">github repos &gt;</a></li>
 		<li><a href="/postcode">Postcode API &gt;</a></li>
+		<li><a href="/each">About a "each" &gt;</a></li>
 	</ul>
 </nav>

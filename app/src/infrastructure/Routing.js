@@ -9,6 +9,7 @@ import MarkdownController from '/src/interfaces/controllers/MarkdownController.j
 import ComponentEventController from '/src/interfaces/controllers/ComponentEventController.js'
 import ReposController from '/src/interfaces/controllers/ReposController.js'
 import PostcodeController from '/src/interfaces/controllers/PostcodeController.js'
+import EachController from '/src/interfaces/controllers/EachController.js'
 
 page('/', IndexController.Index)
 page('/date_picker', DatePickerController.Index)
@@ -19,6 +20,7 @@ page('/markdown', MarkdownController.Index)
 page('/component_event', ComponentEventController.Index)
 page('/repos', ReposController.Index)
 page('/postcode', PostcodeController.Index)
+page('/each', EachController.Index)
 page()
 
 /*
