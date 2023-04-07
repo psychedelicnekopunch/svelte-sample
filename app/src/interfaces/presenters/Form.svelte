@@ -1,7 +1,5 @@
 <script>
 
-	let lists = []
-	let inputValue = ''
 	let i = 0
 
 
@@ -23,7 +21,7 @@ call: { i } times.
 <h2>in form tag</h2>
 
 <form>
-	<input type="text" name="" bind:value={ inputValue } placeholder="focus and press ENTER">
+	<input type="text" name="" value="" placeholder="focus and press ENTER">
 	<button type="button" on:click|preventDefault={ call }>
 		type button
 	</button>
@@ -31,7 +29,7 @@ call: { i } times.
 
 
 <form method="GET">
-	<input type="text" name="" bind:value={ inputValue } placeholder="focus and press ENTER">
+	<input type="text" name="" value="" placeholder="focus and press ENTER">
 	<button type="submit" on:click|preventDefault={ call }>
 		type submit
 	</button>
@@ -43,7 +41,7 @@ call: { i } times.
 <h2>hove no form tag</h2>
 
 <div>
-	<input type="text" name="" bind:value={ inputValue } placeholder="focus and press ENTER">
+	<input type="text" name="" value="" placeholder="focus and press ENTER">
 	<button type="button" on:click|preventDefault={ call }>
 		type button
 	</button>
@@ -51,7 +49,7 @@ call: { i } times.
 
 
 <div method="GET">
-	<input type="text" name="" bind:value={ inputValue } placeholder="focus and press ENTER">
+	<input type="text" name="" value="" placeholder="focus and press ENTER">
 	<button type="submit" on:click|preventDefault={ call }>
 		type submit
 	</button>
