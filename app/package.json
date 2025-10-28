@@ -20,7 +20,7 @@
   "dependencies": {
     "axios": "^0.x",
     "lodash.foreach": "^4.x",
-    "marked": "^0.x",
+    "marked": "^4.x",
     "moment": "^2.x",
     "page": "^1.x"
   }
