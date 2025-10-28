@@ -4,7 +4,7 @@
   "devDependencies": {
     "css-loader": "^5.x",
     "mini-css-extract-plugin": "^1.x",
-    "node-sass": "^5.x",
+    "node-sass": "^7.x",
     "sass-loader": "^10.x",
     "style-loader": "^2.x",
     "svelte": "^3.x",
