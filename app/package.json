@@ -7,7 +7,7 @@
     "node-sass": "^9.x",
     "sass-loader": "^10.x",
     "style-loader": "^2.x",
-    "svelte": "^3.x",
+    "svelte": "^4.x",
     "svelte-loader": "^3.x",
     "svelte-preprocess": "^4.x",
     "webpack": "^5.x",
