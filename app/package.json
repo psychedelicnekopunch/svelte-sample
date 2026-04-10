@@ -18,7 +18,7 @@
     "dev": "webpack --mode=development --watch"
   },
   "dependencies": {
-    "axios": "^0.x",
+    "axios": "^1.x",
     "lodash.foreach": "^4.x",
     "marked": "^4.x",
     "moment": "^2.x",
